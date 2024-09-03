@@ -1,0 +1,24 @@
+.card-body-stars {
+    list-style: none; /* Убираем стандартные маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Располагаем звезды в строку */
+    align-items: center; /* Центруем по вертикали */
+}
+
+.card-body-stars li {
+    margin-right: 5px; /* Отступ между звездами */
+    cursor: pointer; /* Указываем, что элемент кликабельный */
+    transition: transform 0.2s; /* Плавный переход для изменения размера */
+}
+
+.card-body-stars li:hover {
+    transform: scale(1.2); /* Увеличиваем звезду при наведении */
+}
+
+.card-body-stars svg {
+    height: 28px; /* Высота звезды */
+    width: 28px; /* Ширина звезды */
+    transition: fill 0.2s; /* Плавный переход при изменении цвета */
+}
+
